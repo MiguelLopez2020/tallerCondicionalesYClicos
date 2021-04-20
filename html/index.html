@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Condicionales y Ciclos</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <p id=par>numero</p>
+            <label for="">Coloque aqui su número</label>
+            <input type="number" id="num1">
+        </form>
+        <button onclick="calcular()">Calcular</button>
+    </div>
+
+    <div>
+        <form action="">
+            <p id="pr">primo o no primo?</p>
+            <label for="">Escribe el numero</label>
+            <input type="number" id="num2">
+        </form>
+        <button onclick="primo()">verifica</button>
+    </div>
+
+    <div>
+        <form action="">
+            <p>Pizeria Pepitos</p><br>
+            <p id="premio">que premio recibe?</p>
+            <label for="">edad</label>
+            <input type="number" id="age"> <br>
+            <label for="">Genero</label>
+            <select name="" id="gen">
+                <option value=" " id=" "> </option>
+                <option value="mujer" id="mujer">mujer</option>
+                <option value="hombre" id="hombre">hombre</option>
+            </select>
+        </form>
+        <button onclick="pizeria()">validar</button>
+    </div>
+
+    <div>
+        <p>valor total</p>
+        <form action="">
+            <select name="" id="listA">
+                <option value=""> </option>
+                <option value="piz1" id="piz1">Pizza Colombiana $8.500</option>
+                <option value="piz2" id="piz2">Pizza de carnes $8.500</option>
+                <option value="piz3" id="piz3">Pizza Napolitana $8.500</option>
+                <option value="pc1" id="pc1">Perro Caliente Sencillo $5.500</option>
+                <option value="pc2" id="pc2">Perro Caliente Epecial $7.500</option>
+                <option value="h1" id="h1">Hamburguesa Sencilla $7.400</option>
+                <option value="h2" id="h2">Hamburguesa Especial $8.400</option>
+                <option value="l1" id="l1">Lasagna $10.800</option>
+                <option value="m1" id="m1">Mazorcada $11.500</option>
+                <option value="s1" id="s1">Salchipapa $7.500</option>
+            </select> <br>
+            <select name="" id="listB">
+                <option value=""> </option>
+                <option value="piz1" id="piz1">Pizza Colombiana $8.500</option>
+                <option value="piz2" id="piz2">Pizza de carnes $8.500</option>
+                <option value="piz3" id="piz3">Pizza Napolitana $8.500</option>
+                <option value="pc1" id="pc1">Perro Caliente Sencillo $5.500</option>
+                <option value="pc2" id="pc2">Perro Caliente Epecial $7.500</option>
+                <option value="h1" id="h1">Hamburguesa Sencilla $7.400</option>
+                <option value="h2" id="h2">Hamburguesa Especial $8.400</option>
+                <option value="l1" id="l1">Lasagna $10.800</option>
+                <option value="m1" id="m1">Mazorcada $11.500</option>
+                <option value="s1" id="s1">Salchipapa $7.500</option>
+            </select> <br>
+
+        </form>
+        <button onclick="ValorAPagar()">Valor a Pagar</button>
+    </div>
+
+    <div>
+        <p>Tabla de multiplicar</p>
+        <p id="tdm"> </p>
+        <form action="">
+            <label for="">ingresa un numero</label>
+            <input type="number" id="numero">
+        </form>
+        <button onclick="Resultado()">resultado</button>
+    </div>
+
+    <h1>matricula</h1>
+    <form action="">
+        <label for="">Promedio Semestre</label>
+        <input type="number" id="promedio">
+    </form>
+    <button onclick="informe()">calcular </button>
+
+    <script src="../js/code.js"></script>
+</body>
+
+</html>
