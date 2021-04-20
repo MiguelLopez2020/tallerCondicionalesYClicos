@@ -6,45 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Condicionales y Ciclos</title>
+    <link rel="stylesheet" href="../css/Styles.css">
 </head>
 
 <body>
-    <div>
+    <div class="Ejercicio1">
         <form action="">
-            <p id=par>numero</p>
+            <h3>Numero</h3>
+            <p id=par> </p>
             <label for="">Coloque aqui su número</label>
-            <input type="number" id="num1">
-        </form>
-        <button onclick="calcular()">Calcular</button>
+            <input type="number" id="num1"> <br>
+        </form> <br>
+        <button onclick="calcular()">Respuesta</button>
     </div>
 
-    <div>
+    <div class="primo">
+        <h3>Par o Impar</h3>
         <form action="">
-            <p id="pr">primo o no primo?</p>
+            <p id="pr"> </p>
             <label for="">Escribe el numero</label>
             <input type="number" id="num2">
-        </form>
-        <button onclick="primo()">verifica</button>
+        </form> <br>
+        <button onclick="primo()">Respuesta</button>
     </div>
 
-    <div>
+    <div class="pizeria">
         <form action="">
-            <p>Pizeria Pepitos</p><br>
-            <p id="premio">que premio recibe?</p>
-            <label for="">edad</label>
-            <input type="number" id="age"> <br>
+            <h3>Pizzeria Pepitos</h3>
+            <p id="premio"> </p>
+            <label for="">Edad</label>
+            <input type="number" id="age"> <br> <br>
             <label for="">Genero</label>
-            <select name="" id="gen">
+            <select name="" id="gen"> <br><br>
                 <option value=" " id=" "> </option>
-                <option value="mujer" id="mujer">mujer</option>
-                <option value="hombre" id="hombre">hombre</option>
+                <option value="mujer" id="mujer">Mujer</option>
+                <option value="hombre" id="hombre">Hombre</option>
             </select>
-        </form>
-        <button onclick="pizeria()">validar</button>
+        </form><br>
+        <button onclick="pizeria()">Respuesta</button>
     </div>
 
-    <div>
-        <p>valor total</p>
+    <div class="total">
+        <h3>La cuenta es</h3>
+        
         <form action="">
             <select name="" id="listA">
                 <option value=""> </option>
@@ -71,29 +75,30 @@
                 <option value="l1" id="l1">Lasagna $10.800</option>
                 <option value="m1" id="m1">Mazorcada $11.500</option>
                 <option value="s1" id="s1">Salchipapa $7.500</option>
-            </select> <br>
+            </select> <br> <br>
 
         </form>
-        <button onclick="ValorAPagar()">Valor a Pagar</button>
+        <button onclick="ValorAPagar()">Respuesta</button>
     </div>
 
-    <div>
-        <p>Tabla de multiplicar</p>
+    <div class="mult">
+        <h3>Tabla de multiplicar</h3>
         <p id="tdm"> </p>
         <form action="">
             <label for="">ingresa un numero</label>
             <input type="number" id="numero">
-        </form>
-        <button onclick="Resultado()">resultado</button>
+        </form> <br>
+        <button onclick="Resultado()">Respuesta</button>
     </div>
-
-    <h1>matricula</h1>
-    <form action="">
-        <label for="">Promedio Semestre</label>
-        <input type="number" id="promedio">
-    </form>
-    <button onclick="informe()">calcular </button>
-
+    <div class="matr">
+        <h3>Matricula</h3>
+        <p id="dto"></p>
+        <form action="">
+            <label for="">Promedio Semestre</label>
+            <input type="number" id="promedio">
+        </form><br>
+        <button onclick="informe()">calcular </button>
+    </div>
     <script src="../js/code.js"></script>
 </body>
 
