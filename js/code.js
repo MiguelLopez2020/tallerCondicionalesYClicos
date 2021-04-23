@@ -39,8 +39,8 @@ function pizeria() {
 
 function ValorAPagar() {
 
-    var precioActual = precioActual_2
-    var opcionMenu = document.getElementById("listaA").value
+    var precioActual = precioActual_2()
+    var opcionMenu = document.getElementById("listA").value
     var precio = 0
     switch (opcionMenu) {
         case "piz1":
@@ -82,7 +82,8 @@ function ValorAPagar() {
     }
 }
 function precioActual_2() {
-    return document.getElementById("precioActual").value
+    document.getElementById("precioActual").value
+    document.getElementById("precioTotalCliente").innerHTML = precioActual
 }
 
 
