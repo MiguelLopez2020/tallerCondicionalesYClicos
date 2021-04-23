@@ -94,11 +94,11 @@ function division() {
     var total = ValorAPagar()
 
     if (div == 1) {
-        console.log(parseInt(total) / parseInt(1))
+        console.log(total / 1)
     } else if (div == 2) {
-        console.log(parseInt(total) / parseInt(2))
+        console.log(total / 2)
     } else {
-        console.log(parseInt(total) / parseInt(3))
+        console.log(total / 3)
     }
 }
 
