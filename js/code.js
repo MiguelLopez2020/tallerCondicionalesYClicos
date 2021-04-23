@@ -4,7 +4,7 @@ function calcular() {
     var b = 0
     for (var x = 1; x <= a; x++) {
         b = x + b
-        document.getElementById("par").innerHTML = (a + " +" + "1" + "=" + b)
+        document.getElementById("par").innerHTML = (a + " +" + x + "=" + b)
     }
 
 }
