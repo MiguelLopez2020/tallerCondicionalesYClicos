@@ -90,18 +90,18 @@ function precioActual_2() {
 }
 
 function division() {
-    var div_1 = document.getElementById("1")
-    var div_2 = document.getElementById("2")
-    var div_3 = document.getElementById("3")
-    var total = ValorAPagar()
+    var div_1 = document.getElementById("1").checked
+    var div_2 = document.getElementById("2").checked
+    var div_3 = document.getElementById("3").checked
+    var total = document.getElementById('precioTotalCliente').value
 
-    if (div_1.checked == true) {
-        console.log(parseInt(total) / 1)
-    } else if (div_2.checked == true) {
-        console.log(parseInt(total) / 2)
-    } else if (div_3.checked == true) {
-        console.log(parseInt(total) / 3)
-    } else { console.log(" ") }
+    if (div_1 == true) {
+        document.getElementById("valorPersona").innerHTML = (parseInt(total) / 1)
+    } else if (div_2 == true) {
+        document.getElementById("valorPersona").innerHTML = (parseInt(total) / 2)
+    } else if (div_3== true) {
+        document.getElementById("valorPersona").innerHTML = (parseInt(total) / 3)
+    } else { document.getElementById("valorPersona").innerHTML = (" ") }
 }
 
 

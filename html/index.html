@@ -12,7 +12,7 @@
 <body>
     <div class="Ejercicio1">
         <form action="">
-            <h3>Numero</h3>
+            <h3>Numero (Revisa la consola)</h3>
             <p id=par> </p>
             <label for="">Coloque aqui su número</label>
             <input type="number" id="num1"> <br>
@@ -65,7 +65,7 @@
             </select> <br> <br>
 
         </form>
-        <button onclick="ValorAPagar()">Respuesta</button> <br> <br>
+        <button onclick="ValorAPagar()">Fatura aqui</button> <br> <br>
 
         <form action="">
             <label for="">Cantidad de personas para dividir la cuenta</label><br> <br>
@@ -78,13 +78,15 @@
                 <input type="radio" name="div" id="3">
             </section>
         </form>
-        <input type="text" id="valorU" value="0">
-        <p></p>
-        <button onclick="division()">divide la cuenta</button>
+        <input type="hidden" id="valorU" value="0">
+        <button onclick="division()">Divide la cuenta</button> <br>
+        <p>Cada uno paga</p>
+        <p id="valorPersona"></p>
+
     </div>
 
     <div class="mult">
-        <h3>Tabla de multiplicar</h3>
+        <h3>Tabla de multiplicar (Revisa la consola)</h3>
         <p id="tdm"> </p>
         <form action="">
             <label for="">ingresa un numero</label>
