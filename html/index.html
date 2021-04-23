@@ -48,7 +48,7 @@
 
     <div class="total">
         <h3>La cuenta es</h3>
-
+        <input type="text" id="precioTotalCliente" value="0">
         <form action="">
             <select name="" id="listA">
                 <option value=""> </option>
@@ -63,9 +63,24 @@
                 <option value="m1" id="m1">Mazorcada $11.500</option>
                 <option value="s1" id="s1">Salchipapa $7.500</option>
             </select> <br> <br>
-            <input type="hidden" id="precioTotalCliente" value="0">
+
         </form>
-        <button onclick="ValorAPagar()">Respuesta</button>
+        <button onclick="ValorAPagar()">Respuesta</button> <br> <br>
+
+        <form action="">
+            <label for="">Cantidad de personas para dividir la cuenta</label><br> <br>
+            <section name="clientes">
+            <label for="">1</label>
+            <input type="radio" id="1">
+            <label for="">2</label>
+            <input type="radio" id="2">
+            <label for="">3</label>
+            <input type="radio" id="3">
+        </section>
+        </form>
+        <input type="text" id="valorU" value="0">
+        <p></p>
+        <button onclick="division()">divide la cuenta</button>
     </div>
 
     <div class="mult">

@@ -80,12 +80,27 @@ function ValorAPagar() {
     } else {
         precioActual = precio
     }
+
+    document.getElementById('precioTotalCliente').value = precioActual
+    document.getElementById('precioTotalCliente').innerHTML = precioActual
 }
 function precioActual_2() {
-    document.getElementById("precioActual").value
-    document.getElementById("precioTotalCliente").innerHTML = precioActual
+    return document.getElementById("precioTotalCliente").value
+
 }
 
+function division() {
+    var div = document.getElementsByName("clientes").value
+    var total = ValorAPagar()
+
+    if (div == 1) {
+        console.log(parseInt(total) / parseInt(1))
+    } else if (div == 2) {
+        console.log(parseInt(total) / parseInt(2))
+    } else {
+        console.log(parseInt(total) / parseInt(3))
+    }
+}
 
 
 function Resultado() {
