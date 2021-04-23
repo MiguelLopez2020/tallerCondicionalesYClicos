@@ -90,7 +90,7 @@ function precioActual_2() {
 function Resultado() {
     var x = document.getElementById("numero").value
     for (var a = 1; a <= 10; a++)
-        document.getElementById("tdm").innerHTML = (x + "X" + a + "=" + (x * a) + "<br>");
+        console.log(x + "X" + a + "=" + (x * a));
 }
 
 function informe() {
