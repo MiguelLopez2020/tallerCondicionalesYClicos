@@ -90,16 +90,18 @@ function precioActual_2() {
 }
 
 function division() {
-    var div = document.getElementsByName("clientes").value
+    var div_1 = document.getElementById("1")
+    var div_2 = document.getElementById("2")
+    var div_3 = document.getElementById("3")
     var total = ValorAPagar()
 
-    if (div == 1) {
-        console.log(total / 1)
-    } else if (div == 2) {
-        console.log(total / 2)
-    } else {
-        console.log(total / 3)
-    }
+    if (div_1.checked == true) {
+        console.log(parseInt(total) / 1)
+    } else if (div_2.checked == true) {
+        console.log(parseInt(total) / 2)
+    } else if (div_3.checked == true) {
+        console.log(parseInt(total) / 3)
+    } else { console.log(" ") }
 }
 
 
